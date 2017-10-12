@@ -38,7 +38,7 @@ if ( class_exists( 'GFForms' ) ) {
 
 		// Mask: 2 letters / 2 numbers / max 32 numbers or letters
 		if ( 'iban' == $mask ) {
-			$script = "jQuery('#input_{$form_id}_{$field_id}').mask('aa99 ?**** **** **** **** **** **** **** ****');";
+			$script = "jQuery('#input_{$form_id}_{$field_id}').mask('aa99?********************************');";
 		}
 		return $script;
 	}
